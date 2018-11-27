@@ -1,0 +1,1287 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'portfolio/portfolio.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/stylePortfolio.css' %}">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        #ahsan-button {
+            cursor: pointer;
+            width: 100%;
+            color: rgb(55, 61, 71);
+            background-color: white;
+            border: none;
+            padding: 0.8rem;
+            outline: none;
+            font-family: 'Quicksand';
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        #ahsan-form {
+            display: none;
+        }
+
+        .gradient1 { background: linear-gradient(30deg,  #799F0C, #FFE000); }
+        .gradient2 { background: linear-gradient(30deg,  #C6FFDD, #FBD786, #f7797d); }
+        .gradient3 { background: linear-gradient(30deg, rgba(233,240,104,1) 0%, rgba(70,252,146,1) 100%); }
+
+        .instagram { background: radial-gradient(circle at 0% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF); }
+
+        .lightBlue { background-color: rgb(230, 249, 255); }
+    </style>
+
+</head>
+<body class="bg-dark">
+
+    <div class="wrapper">
+        <!-- loginForm -->
+        <div class="loginBox">
+            <div class="container-fluid p-0">
+                <div class="row mb-3">
+                    <div class="col">
+                        <button id="signin-button">Siyam Al Galib</button>
+                    </div>
+                    <div class="col">
+                        <button id="signup-button">S. Rahman</button>
+                    </div>
+                    <div class="col">
+                        <button id="ahsan-button">Ahsan Habib</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container-fluid p-0">
+                <form id="signin-form" class="px-3" style="background: rgb(46, 46, 46)">
+                    <!-- Header -->
+                    <section class="header">
+                        <div class="showcase">
+                            <div class="container">
+                                <div class="metaContent">
+                                    <!----------------------------Siyam----------------------------->
+                                    <h4><span class="text-warning">Abdullah Al Galib (Siyam)</span></h4>
+                                    <p>Team Leader | Python Developer | Presenter | Tech Enthusiast</p>
+
+                                    <a href="../portfolio/resume/CV-Abdullah Al Galib-2.pdf" class="btn btn-outline-warning btn-sm" download>Download CV</a>
+
+                                    <p class="lead mt-4" style="width: 500px">Main planning and structure of this project have developed by me. I'm the team leader of this project.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- user image -->
+                        <div class="userImage">
+                            <img src="/static/images/siyam.jpg" alt="Galib">
+                        </div>
+                    </section>
+                    <!-- Header -->
+
+                    <!-- Main-Body -->
+                    <section class="main-body">
+                        <div class="container-fluid p-0">
+                            <div class="box mb-3 mt-5">
+                                <h1 class="text-left">About Me</h1> <hr>
+                                <div class="card-body text-justify">
+                                    <p>A person who thinks outside the box and likes to communicate with people. I want to build my career as a software developer and focus on management in the future.</p> <br>
+                                    <p>
+                                        Ideas of this whole project came to my head a couple of months ago. Then I and my friend Sohanur Rahman set up a basic design and I used Python's Django web framework to write the original structure. Ahsan Habib has played an important role in fixing the bugs and updating the entire project. Sohanur Rahman has developed and designed and developed the whole front. I have been a Team Leader and coordinated with the rest of the team. Our team effort is bringing the project up to this end. The name of our team is 'DevsCave'.
+                                    </p>
+                                    <hr>
+                                    <div class="row mt-3">
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/khidmah (1).JPG">
+                                                <img src="/static/images/khidmah (1).JPG" alt="" style="width: 100%; height: 100px">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/khidmah (2).JPG">
+                                                <img src="/static/images/khidmah (2).JPG" alt="" style="width: 100%; height: 100px">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/khidmah (3).JPG">
+                                                <img src="/static/images/khidmah (3).JPG" alt="" style="width: 100%; height: 100px">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/joy.JPG">
+                                                <img src="/static/images/joy.JPG" alt="" style="width: 100%; height: 100px">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/khidmah (4).JPG">
+                                                <img src="/static/images/khidmah (4).JPG" alt="" style="width: 100%; height: 100px">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/khidmah (5).JPG">
+                                                <img src="/static/images/khidmah (5).JPG" alt="" style="width: 100%; height: 100px">
+                                            </a>
+                                        </div>
+                                    </div> <hr>
+                                </div> 
+                            </div>
+                        
+                            <!-- Experience -->
+                            <div class="experience mb-4 mt-5">
+                                <h1 class="display-5">Experience</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+{#                                            <div class="card-header text-white">Programming Language </div>#}
+                                            <div class="card-body">
+                                                <div>
+                                                    <h5>Marketing Communications</h5>
+                                                    <h6>Khidmah IT</h6>
+                                                    <p>Jul 2018 – Present</p>
+                                                    <p>Dhaka</p>
+                                                    <p>
+                                                        Khidmah IT is a startup IT training center and working to develop some software.
+                                                        <br>
+                                                        Practicing Topics<br>
+                                                        ----------------------<br>
+                                                        - Branding.<br>
+                                                        - Team leading.<br>
+                                                        - Client dealings.<br>
+                                                        - Decision making<br>
+                                                        - Digital marketing.<br>
+                                                        - Business meetings.<br>
+                                                        - Marketing strategy.<br>
+                                                    </p>
+                                                </div> <hr>
+
+                                                <div class="row mt-3">
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/khidmah (3).JPG">
+                                                            <img src="/static/images/khidmah (3).JPG" alt="" style="width: 100%; height: 75px">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%; height: 75px">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%; height: 75px">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%; height: 75px">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+{#                                            <div class="card-header text-white">Programming Language </div>#}
+                                            <div class="card-body">
+                                                <div>
+                                                    <h5>Python Developer</h5>
+                                                    <h6>Khidmah IT</h6>
+                                                    <p>Sep 2017 – Present</p>
+                                                    <p>Dhaka</p>
+                                                    <p>
+                                                        We have developed a Django powered, open source web-based software which will launch soon. The official name of this project will be 'SHANIRVOR (স্বনির্ভর)'. It's a local freelancing platform application and in the testing stage now. Also, our team is working to develop some other softwares as well.
+                                                        <br>
+                                                        <hr>
+                                                        Practicing Topics<br>
+                                                        <hr>
+                                                        - Coding.<br>
+                                                        - Teamwork.<br>
+                                                        - Completing tasks.<br>
+                                                        - Version controlling.<br>
+                                                        - Agile methodologies.<br>
+                                                    </p>
+                                                </div> <hr>
+
+                                                <div class="row mt-3">
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/khidmah (3).JPG" alt="" style="width: 100%; height: 75px">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/khidmah (3).JPG" alt="" style="width: 100%; height: 75px">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/image1.jpg" alt="" style="width: 100%; height: 75px">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/image1.jpg" alt="" style="width: 100%; height: 75px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience -->
+
+                            <!-- project -->
+                            <div class="project">
+                                <h1 class="">Project</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Projects </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <ul class=" listNone">
+                                                            <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                            <li><i class="fa fa-angle-right"></i> Python</li>
+                                                            <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <ul class=" listNone">
+                                                            <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                            <li><i class="fa fa-angle-right"></i> Python</li>
+                                                            <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <ul class=" listNone">
+                                                            <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                            <li><i class="fa fa-angle-right"></i> Python</li>
+                                                            <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- project -->
+
+                            <!-- Skills -->
+                            <div class="skills mt-4">
+                                <h1 class="">Skills</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Skills -->
+
+                            <!-- Education -->
+                            <div class="education mt-4">
+                                <h1 class="display-5">Education</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education -->
+
+                            <!-- Certifications -->
+                            <div class="accomplishments mt-4">
+                                <h1 class="display-5">Accomplishments</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Certifications -->
+                        </div>
+                    </section>
+                    <!-- Main-Body -->
+                
+                    <div class="footer mt-5">
+                        <p class="text-white pt-4 pb-1"> Follow Me</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f facebook"></i></a></li>
+                            <li><a href="https://twitter.com/login"><i class="fab fa-github bg-dark"></i></a></li>
+                            <li><a href="https://www.instagram.com/"><i class="fab fa-bitbucket twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in linkedin"></i></a></li>
+                        </ul> <hr>
+                    </div>
+                </form>
+
+                <form id="signup-form" class="gradient3 px-3" >
+                    <!-- Header -->
+                    <section class="header">
+                        <div class="showcase">
+                            <div class="container">
+                                <div class="metaContent">
+                                    <!----------------------------Joy----------------------------->
+                                    <h4>I'M <span class="text-warning">S. Rahman</span></h4>
+                                    <p>BACK END DEVELOPER, PYTHON DEVELOPER</p>
+
+                                    <a href="../portfolio/resume/Resume-Joy.jpg" class="btn btn-outline-warning btn-sm" download>Download CV</a>
+
+                                    <p class="lead mt-4" style="width: 500px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, dignissimos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- user image -->
+                        <div class="userImage" style="visibility: hidden">
+                            <img src="/static/images/t1.png" alt="">
+                        </div>
+                    </section>
+                    <!-- Header -->
+
+                    <!-- Main-Body -->
+                    <section class="main-body">
+                        <div class="container-fluid p-0">
+                            <div class="box mb-3 mt-5">
+                                <h1 class="text-left">About Me</h1> <hr>
+                                <div class="card-body text-justify">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque error culpa similique quibusdam laboriosam illum odit numquam blanditiis quasi earum molestiae voluptatibus, nisi velit deleniti esse nulla, hic magnam nobis. Eaque error culpa similique quibusdam laboriosam illum odit numquam blanditiis quasi earum molestiae voluptatibus, nisi velit deleniti esse nulla, hic magnam nobis.</p> <br>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque error culpa similique quibusdam laboriosam illum odit numquam blanditiis quasi earum molestiae voluptatibus, nisi velit deleniti esse nulla, hic magnam nobis. Eaque error culpa similique quibusdam laboriosam illum odit numquam blanditiis quasi earum molestiae voluptatibus, nisi velit deleniti esse nulla, hic magnam nobis.</p>
+                                    <hr>
+                                    <div class="row mt-3">
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Experience -->
+                            <div class="experience mb-4 mt-5">
+                                <h1 class="display-5">Experience</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <div>
+                                                    <h5>Khidmah IT</h5>
+                                                    <h6>1yr 2 mos</h6>
+                                                    <p>
+                                                        Marketing Communications
+                                                        Jul 2018 – Present
+                                                        4 mos
+                                                        Dhaka
+                                                    </p>
+                                                    
+                                                    <p>Khidmah IT is a startup IT training center and working to develop some software. </p>
+                                                    
+                                                    <p>
+                                                        Practicing Topics <br>
+                                                        ---------------------- <br>
+                                                        - Branding. <br>
+                                                        - Team leading. <br>
+                                                        - Client dealings. <br>
+                                                        - Decision making
+                                                    </p>
+                                                </div> <hr>
+
+                                                <div class="row mt-3">
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <div>
+                                                    <h5>Khidmah IT</h5>
+                                                    <h6>1yr 2 mos</h6>
+                                                    <p>
+                                                        Marketing Communications
+                                                        Jul 2018 – Present
+                                                        4 mos
+                                                        Dhaka
+                                                    </p>
+                                                    
+                                                    <p>Khidmah IT is a startup IT training center and working to develop some software. </p>
+                                                    
+                                                    <p>
+                                                        Practicing Topics <br>
+                                                        ---------------------- <br>
+                                                        - Branding. <br>
+                                                        - Team leading. <br>
+                                                        - Client dealings. <br>
+                                                        - Decision making
+                                                    </p>
+                                                </div><hr>
+
+                                                <div class="row mt-3">
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience -->
+
+                            <!-- project -->
+                            <div class="project">
+                                <h1 class="">Project</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Projects </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <ul class=" listNone">
+                                                            <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                            <li><i class="fa fa-angle-right"></i> Python</li>
+                                                            <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <ul class=" listNone">
+                                                            <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                            <li><i class="fa fa-angle-right"></i> Python</li>
+                                                            <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <ul class=" listNone">
+                                                            <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                            <li><i class="fa fa-angle-right"></i> Python</li>
+                                                            <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- project -->
+
+                            <!-- Skills -->
+                            <div class="skills mt-4">
+                                <h1 class="">Skills</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Skills -->
+
+                            <!-- Education -->
+                            <div class="education mt-4">
+                                <h1 class="display-5">Education</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education -->
+
+                            <!-- Certifications -->
+                            <div class="accomplishments mt-4">
+                                <h1 class="display-5">Accomplishments</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Certifications -->
+                        </div>
+                    </section>
+                    <!-- Main-Body -->
+                
+                    <div class="footer mt-5">
+                        <p class="text-white pt-4 pb-1"> Follow Me </p>
+                        <ul>
+                            <li><a href="https://goo.gl/Gz72pg" target="_blank"><i class="fab fa-facebook-f facebook"></i></a></li>
+                            <li><a href="https://goo.gl/Ni8dGx" target="_blank"><i class="fab fa-twitter twitter"></i></a></li>
+                            <li><a href="https://goo.gl/bqHnep" target="_blank"><i class="fab fa-instagram instagram"></i></a></li>
+                            <li><a href="https://goo.gl/Sgc5L8" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a></li>
+                        </ul> <hr>
+                    </div>
+                </form>
+                
+                <form id="ahsan-form" class="gradient1 px-3">
+                    <!-- Header -->
+                    <section class="header">
+                        <div class="showcase">
+                            <div class="container">
+                                <div class="metaContent">
+                                    <!----------------------------Ahsan----------------------------->
+                                    <h4>I'M <span class="text-warning">Ahsan Habib</span></h4>
+                                    <p>BACK END DEVELOPER, PYTHON DEVELOPER</p>
+
+                                    <a href="../portfolio/resume/Resume-Joy.jpg" class="btn btn-outline-warning btn-sm" download>Download CV</a>
+
+                                    <p class="lead mt-4" style="width: 500px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, dignissimos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- user image -->
+                        <div class="userImage">
+                            <img src="/static/images/t1.png" alt="">
+                        </div>
+                    </section>
+                    <!-- Header -->
+
+                    <!-- Main-Body -->
+                    <section class="main-body">
+                        <div class="container-fluid p-0">
+                            <div class="box mb-3 mt-5">
+                                <h1 class="text-left">About Me</h1> <hr>
+                                <div class="card-body text-justify">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque error culpa similique quibusdam laboriosam illum odit numquam blanditiis quasi earum molestiae voluptatibus, nisi velit deleniti esse nulla, hic magnam nobis. Eaque error culpa similique quibusdam laboriosam illum odit numquam blanditiis quasi earum molestiae voluptatibus, nisi velit deleniti esse nulla, hic magnam nobis.</p> <br>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque error culpa similique quibusdam laboriosam illum odit numquam blanditiis quasi earum molestiae voluptatibus, nisi velit deleniti esse nulla, hic magnam nobis. Eaque error culpa similique quibusdam laboriosam illum odit numquam blanditiis quasi earum molestiae voluptatibus, nisi velit deleniti esse nulla, hic magnam nobis.</p>
+                                    <hr>
+                                    <div class="row mt-3">
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <a href="/static/images/image1.jpg">
+                                                <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Experience -->
+                            <div class="experience mb-4 mt-5">
+                                <h1 class="display-5">Experience</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <div>
+                                                    <h5>Khidmah IT</h5>
+                                                    <h6>1yr 2 mos</h6>
+                                                    <p>
+                                                        Marketing Communications
+                                                        Jul 2018 – Present
+                                                        4 mos
+                                                        Dhaka
+                                                    </p>
+                                                    
+                                                    <p>Khidmah IT is a startup IT training center and working to develop some software. </p>
+                                                    
+                                                    <p>
+                                                        Practicing Topics <br>
+                                                        ---------------------- <br>
+                                                        - Branding. <br>
+                                                        - Team leading. <br>
+                                                        - Client dealings. <br>
+                                                        - Decision making
+                                                    </p>
+                                                </div> <hr>
+
+                                                <div class="row mt-3">
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <a href="/static/images/image1.jpg">
+                                                            <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <div>
+                                                    <h5>Khidmah IT</h5>
+                                                    <h6>1yr 2 mos</h6>
+                                                    <p>
+                                                        Marketing Communications
+                                                        Jul 2018 – Present
+                                                        4 mos
+                                                        Dhaka
+                                                    </p>
+                                                    
+                                                    <p>Khidmah IT is a startup IT training center and working to develop some software. </p>
+                                                    
+                                                    <p>
+                                                        Practicing Topics <br>
+                                                        ---------------------- <br>
+                                                        - Branding. <br>
+                                                        - Team leading. <br>
+                                                        - Client dealings. <br>
+                                                        - Decision making
+                                                    </p>
+                                                </div><hr>
+
+                                                <div class="row mt-3">
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <img src="/static/images/image1.jpg" alt="" style="width: 100%">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience -->
+
+                            <!-- project -->
+                            <div class="project">
+                                <h1 class="">Project</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Projects </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <ul class=" listNone">
+                                                            <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                            <li><i class="fa fa-angle-right"></i> Python</li>
+                                                            <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <ul class=" listNone">
+                                                            <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                            <li><i class="fa fa-angle-right"></i> Python</li>
+                                                            <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                                        <ul class=" listNone">
+                                                            <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                            <li><i class="fa fa-angle-right"></i> Python</li>
+                                                            <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- project -->
+
+                            <!-- Skills -->
+                            <div class="skills mt-4">
+                                <h1 class="">Skills</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Skills -->
+
+                            <!-- Education -->
+                            <div class="education mt-4">
+                                <h1 class="display-5">Education</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education -->
+
+                            <!-- Certifications -->
+                            <div class="accomplishments mt-4">
+                                <h1 class="display-5">Accomplishments</h1><hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 mb-4">
+                                        <div class="card">
+                                            <div class="card-header text-white">Programming Language </div>
+                                            <div class="card-body">
+                                                <ul class=" listNone">
+                                                    <li><i class="fa fa-angle-right"></i> C/C++</li>
+                                                    <li><i class="fa fa-angle-right"></i> Python</li>
+                                                    <li><i class="fa fa-angle-right"></i> Javascript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Certifications -->
+                        </div>
+                    </section>
+                    <!-- Main-Body -->
+                
+                    <div class="social-link mt-5">
+                        <p class="text-white pt-4 pb-1"> Follow Me </p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f facebook"></i></a></li>
+                            <li><a href="https://twitter.com/login"><i class="fab fa-github bg-dark"></i></a></li>
+                            <li><a href="https://www.instagram.com/"><i class="fab fa-bitbucket twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in linkedin"></i></a></li>
+                        </ul> <hr>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script>
+        init();
+
+        function init() {
+            $("#signin-button").css("border-bottom", "3px solid black");
+            $("#signin-form").css("display", "block");
+        }
+
+        $("#signin-button").on("click", function() {
+            $(this).css("border-bottom", "3px solid black");
+
+            $("#signup-button").css("border-bottom", "3px solid white");
+            $("#ahsan-button").css("border-bottom", "3px solid white");
+            
+            $("#signup-form").css("display", "none");
+            $("#ahsan-form").css("display", "none");
+            
+            $("#signin-form").slideDown(500, function() {
+                $(this).css("display", "block");
+            });
+        });
+
+        $("#signup-button").on("click", function() {
+            $(this).css("border-bottom", "3px solid black");
+
+            $("#signin-button").css("border-bottom", "3px solid white");
+            $("#ahsan-button").css("border-bottom", "3px solid white");
+
+            $("#signin-form").css("display", "none");
+            $("#ahsan-form").css("display", "none")
+
+            $("#signup-form").slideDown(500, function() {
+                $(this).css("display", "block");
+            });
+        });
+        
+
+        $("#ahsan-button").on("click", function() {
+            $(this).css("border-bottom", "3px solid black");
+
+            $("#signin-button").css("border-bottom", "3px solid white");
+            $("#signup-button").css("border-bottom", "3px solid white");
+
+            $("#signin-form").css("display", "none");
+            $("#signup-form").css("display", "none")
+
+            $("#ahsan-form").slideDown(500, function() {
+                $(this).css("display", "block");
+            });
+        });
+    </script>
+</body>
+</html>
